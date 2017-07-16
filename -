@@ -1,0 +1,20 @@
+
+Hi! I'm going to generate a Tesla-login ‘token’ for you, which will allow
+services to authenticate to Tesla on your behalf without giving them your
+login information / password.
+
+ (note: These will only be sent directly to Tesla, and not be saved anywhere!)
+
+
+[31m✖[39m Connecting to Tesla.com ...
+
+  [0m[97m[41mError[0m[90m:[0m[37m [0m[97mLogin incorrect. Please double-check the e-mail and password.[0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mgenerate-tesla-token.js[0m[90m:[0m[93m38[0m[37m [0m[37mgenerate[0m
+[0m  [0m  [0m[90m/Users/ec/Dropbox/Code/generate-tesla-token/generate-tesla-token.js:38:16[0m
+[0m  [0m
+[0m  [0m
+[0m  [0m[90m-[0m [0m[93mnext_tick.js[0m[90m:[0m[93m169[0m[37m [0m[37mprocess._tickCallback[0m
+[0m  [0m  [0m[90minternal/process/next_tick.js:169:7[0m
+[0m  [0m
+[0m

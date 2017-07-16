@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+require('hard-rejection/register')
+require('pretty-error').start()
+
+const generate = require('../')
+    , spin = require('ora')
+    , boxen = require('boxen')
+
+generate.inquire()
+   .then(credentials => {
+      console.error("")
+
+      return credentials })
+
+   .then(credentials => {
+      const g = generate(credentials)
+      spin.promise(g, { spinner: 'line2', text: "Connecting to Tesla.com ..." })
+
+      return g })
+
+   .then(token => {
+      // FIXME: Only do the pretty stuff if this is interactive — make for easier
+      //        piping.
+      console.error('Here yeh go; your new, artisinal Tesla token:')
+      console.error('')
+      console.log(boxen(token, {
+         borderStyle: 'round', borderColor: 'green', dimBorder: true,
+         padding: {right: 2, left: 2}
+      })) })
+
+   .catch(error => {
+      console.error("")
+      throw error
+   })
