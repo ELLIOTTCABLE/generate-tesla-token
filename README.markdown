@@ -13,7 +13,7 @@ start your car!**
 Here's a couple sites for which this is useful (i.e. ones that allow you to directly enter a token,
 manually):
 
- - <TeslaLog.com>, an automated data-logger and graph generator for Tesla drivers
+ - <https://TeslaLog.com>, an automated data-logger and graph generator for Tesla drivers
  - The [My Tesla][] skill for [Amazon Alexa and Echo devices][Alexa]
 
    [Alexa]: <https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-WiFi-Alexa/dp/B00X4WHP5E>
@@ -26,18 +26,18 @@ Usage
 -----
 You'll [need Node and npm][tutorial] installed, first.
 
-You can install this the traditional way, if you really want it sitting around on your computer and
-getting out-of-date:
+You can install this Node package the traditional way, if you really want it sitting around on your
+computer and getting out-of-date ...
 
     npm install -g generate-tesla-token
 
-However, if you have a recent version of  npm, it's much simpler to use [`npx`][npx] (you can
-upgrade with `npm install -g npm`, or install it directly with `npm install -g npx`):
+Or, if you have a recent version of npm, it's much simpler to use [`npx`][npx] (you can get it by
+upgrading npm with `npm install -g npm`, or install directly with `npm install -g npx`):
 
     npx generate-tesla-token
 
 <p align="center">
-   <img width=650 align=center
+   <img width=850 align=center
       src="https://user-images.githubusercontent.com/200/28244480-e69b65e6-69b1-11e7-9cc8-be027d87f84c.png">
 </p>
 
