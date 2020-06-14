@@ -18,15 +18,18 @@ generate.inquire()
 
       return g })
 
-   .then(token => {
+   .then(creds => {
+      const report = `auth_token: ${creds.authToken}\nrefresh_token: ${creds.refreshToken}`
+
       // FIXME: Only do the pretty stuff if this is interactive — make for easier
       //        piping.
-      console.error('Here yeh go; your new, artisinal Tesla token:')
+      console.error('Here yeh go; your new, artisinal Tesla tokens:')
       console.error('')
-      console.log(boxen(token, {
+      console.log(boxen(report, {
          borderStyle: 'round', borderColor: 'green', dimBorder: true,
          padding: {right: 2, left: 2}
       })) })
+      console.error("(You probably want the 'auth_token'.)")
 
    .catch(error => {
       console.error("")

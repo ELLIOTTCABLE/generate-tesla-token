@@ -26,12 +26,13 @@ async function generate(credentials){
 
    // teslaJS uses a really strange output format.
        , response = login.response
-       , token    = login.authToken
-       , body     = login.body
+       , authToken = login.authToken
+       , refreshToken = login.refreshToken
+       , body = login.body
 
    switch (response.statusCode) {
       case 200:
-         return login.authToken
+         return { authToken, refreshToken }
       case 401:
          throw new Error('Login incorrect. Please double-check the e-mail and password.')
       default:
