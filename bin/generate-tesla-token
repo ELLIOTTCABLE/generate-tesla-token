@@ -28,8 +28,8 @@ generate.inquire()
       console.log(boxen(report, {
          borderStyle: 'round', borderColor: 'green', dimBorder: true,
          padding: {right: 2, left: 2}
-      })) })
-      console.error("(You probably want the 'auth_token'.)")
+      }) )
+      console.error("(You probably want the 'auth_token'.)") })
 
    .catch(error => {
       console.error("")
