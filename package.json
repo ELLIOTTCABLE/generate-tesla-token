@@ -1,7 +1,7 @@
 {
   "author": "ELLIOTTCABLE (http://ell.io/tt)",
   "name": "generate-tesla-token",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Tiny tool to quickly (and locally) generate a Tesla-API OAuth token.",
   "repository": "ELLIOTTCABLE/generate-tesla-token",
   "main": "generate-tesla-token.js",
